@@ -1,0 +1,80 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#drum-machine {
+    height: 90vh;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    grid-gap: 15px;
+    margin-top: 40px;
+    border-radius: 15px;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(-225deg, #1170dd 25%, #eb9c0b 80%);
+}
+
+.keyboard {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.keyboard .drum-pad {
+    width: 100%;
+    height: 80px;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 680px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.controle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controle>button,
+.controle>input,
+.controle>h3 {
+    margin-bottom: 10px;
+}
+
+.controle button {
+    border: none;
+    color: #066e97;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #000000;
+}

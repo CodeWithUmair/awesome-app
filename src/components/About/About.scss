@@ -1,0 +1,106 @@
+body {
+  background-size: 400% 400%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* about section styling */
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.header p {
+  font-size: 4rem;
+  font-family: "Fredoka One", cursive;
+}
+#about > * {
+  flex: 1 100%;
+  // border-radius: 10px;
+}
+
+article {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+
+  a::before,
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: #8c57aa;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: rgb(115, 14, 209);
+  }
+
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+
+  a span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+.article p {
+  color: black;
+  text-align: justify;
+  font-size: 1.65rem;
+  margin: 0 2rem;
+}
+
+.link-styles {
+  color: rgba(243, 232, 232, 0.651);
+  text-decoration: none;
+}
+
+.link-styles:hover {
+  color: rgb(115, 14, 209);
+  text-decoration: underline;
+}
+footer {
+  width: 100%;
+  background-color: rgba(14, 14, 14, 0);
+}
+.link-footer {
+  font-size: 3rem;
+}
+
+@media (max-width: 447px) {
+  .article p {
+    color: black;
+    text-align: justify;
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+  }
+}

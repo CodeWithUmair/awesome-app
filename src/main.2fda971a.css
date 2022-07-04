@@ -1,0 +1,546 @@
+@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+* {
+    font-family: Poppins, sans-serif
+}
+
+.navbar-brand {
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(#ff0, red);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 1rem
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    -webkit-text-fill-color: transparent
+}
+
+.navbar-brand:hover {
+    background: -webkit-linear-gradient(red, #ff0);
+    -webkit-background-clip: text
+}
+
+a .nav-link {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #ccc 50%, lime 0, red);
+    -webkit-background-clip: text;
+    background-size: 200%;
+    font-size: 1.7rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    transition: .5s ease-out
+}
+
+.nav-link:hover {
+    background-position: -100%
+}
+
+.icons-color {
+    color: #07f
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    -webkit-animation: change 5s ease-in-out infinite;
+    animation: change 5s ease-in-out infinite;
+    background: linear-gradient(-50deg, #f0d, #a774d8, #5095d4, #83947c, #5095d4, #a774d8, #f0d)
+}
+
+.main_container {
+    min-height: 80vh
+}
+
+h2 {
+    -webkit-text-stroke: .22vw #383d52;
+    color: #252839;
+    font-size: 3.5vw;
+    position: relative;
+    text-transform: uppercase
+}
+
+h2:before {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: vw #383d52;
+    -webkit-animation: animate 5s linear infinite;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(red, lime);
+    border-right: 2px solid #f31e02;
+    content: attr(data-text);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+@-webkit-keyframes animate {
+    0%,
+    10%,
+    to {
+        width: 0
+    }
+    80%,
+    90% {
+        width: 100%
+    }
+}
+
+@keyframes animate {
+    0%,
+    10%,
+    to {
+        width: 0
+    }
+    80%,
+    90% {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes change {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    to {
+        background-position: 0 50%
+    }
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    to {
+        background-position: 0 50%
+    }
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%
+}
+
+.main-div {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Fredoka One, cursive, Poppins, sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+}
+
+.child-div {
+    margin-top: 3rem;
+    text-align: center
+}
+
+.child-div figure img {
+    height: 8rem;
+    width: 10rem
+}
+
+.child-div figure figcaption {
+    color: #fff;
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    text-transform: capitalize
+}
+
+input {
+    background-color: #fff;
+    background-image: none;
+    border: .1rem solid #ccc;
+    border-radius: .4rem;
+    box-shadow: inset 0 .1rem .1rem rgb(0 0 0/8%);
+    color: #3a3939;
+    font-size: 1.8rem;
+    height: 3.4rem;
+    line-height: 1.42857143;
+    margin-top: 2rem;
+    padding: 2rem 1.2rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 35rem
+}
+
+input,
+input:active,
+input:active:focus,
+input:focus {
+    border: none;
+    outline: none;
+    padding: 2.3rem 1.5rem
+}
+
+input {
+    box-shadow: none;
+    transition: all .2s linear
+}
+
+input:focus {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2)
+}
+
+.todo-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 5rem
+}
+
+.fa {
+    background-color: #fff;
+    background-image: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: -2.5rem;
+    pointer-events: auto;
+    transition: color .15s linear;
+    z-index: 10
+}
+
+.fa:hover {
+    color: #2fd67a
+}
+
+.fa-plus:before {
+    content: "\f067";
+    font-size: 1.5rem
+}
+
+.showItems {
+    margin-top: 3rem;
+    text-align: center
+}
+
+.eachItem {
+    align-items: center;
+    background: #fff;
+    background: #5529dc;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7rem;
+    min-width: 38rem;
+    padding: 1.2rem 1rem;
+    word-break: break-word
+}
+
+.eachItem:hover {
+    background: #f9fbfc;
+    color: #5529dc
+}
+
+.showItems .eachItem h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    padding-left: 1rem
+}
+
+.fa-edit,
+.fa-trash-alt {
+    color: #fbfbfb;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 .1rem;
+    pointer-events: auto;
+    transition: color .15s linear;
+    z-index: 10
+}
+
+.addItems .fa-edit {
+    color: #2fd67a;
+    margin-left: -3.5rem
+}
+
+.eachItem:hover .fa-trash-alt {
+    color: #d62f3d
+}
+
+.eachItem:hover .fa-edit {
+    color: #64d62f
+}
+
+.eachItem:hover h3 {
+    color: #5529dc
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.btn,
+.btn:hover {
+    text-decoration: none
+}
+
+.effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    color: #000;
+    display: var(--uismLinkDisplay);
+    margin-bottom: 5rem;
+    outline: 2px solid #000;
+    overflow: hidden;
+    position: relative;
+    transition-duration: .4s
+}
+
+.effect04 span,
+.effect04:before {
+    margin: 0 auto;
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(.86, 0, .07, 1)
+}
+
+.effect04:hover {
+    background-color: #5529dc
+}
+
+.effect04:hover span {
+    -webkit-transform: translateY(-400%) scale(-.1, 20);
+    transform: translateY(-400%) scale(-.1, 20)
+}
+
+.effect04:before {
+    color: #fff;
+    content: attr(data-sm-link-text);
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateY(500%) scale(-.1, 20);
+    transform: translateY(500%) scale(-.1, 20)
+}
+
+.effect04:hover:before {
+    letter-spacing: .05em;
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1)
+}
+
+.main_container {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+h3 {
+    font-size: 28px
+}
+
+#drum-machine {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    padding-bottom: 40px
+}
+
+.wrapper {
+    grid-gap: 15px;
+    background-image: linear-gradient(-225deg, #1170dd 25%, #eb9c0b 80%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%
+}
+
+.keyboard {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.keyboard .drum-pad {
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    height: 80px;
+    outline: none;
+    transition: all .3s ease-in-out;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        width: 680px
+    }
+}
+
+@media (min-width:992px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+.controle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.controle>button,
+.controle>h3,
+.controle>input {
+    margin-bottom: 10px
+}
+
+.controle button {
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: #066e97;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 10px
+}
+
+.calculator-grid {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 8.5rem);
+    grid-template-rows: minmax(8rem, auto) repeat(5, 8rem);
+    justify-content: center;
+    margin-top: 3rem
+}
+
+.calculator-grid>button {
+    background-color: rgba(0, 60, 255, .096);
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 3.3rem;
+    outline: none
+}
+
+.calculator-grid>button:focus,
+.calculator-grid>button:hover {
+    background-color: hsla(0, 0%, 100%, .9)
+}
+
+.span-two {
+    grid-column: span 2
+}
+
+.output {
+    word-wrap: break-word;
+    align-items: flex-end;
+    background-color: #134f9c;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/-1;
+    justify-content: space-around;
+    padding: .75rem;
+    word-break: break-all
+}
+
+.output .previous-operand {
+    color: hsla(0, 0%, 100%, .75);
+    font-size: 1.7rem
+}
+
+.output .current-operand {
+    color: #fff;
+    font-size: 2.8rem
+}
+
+body {
+    background-size: 400% 400%;
+    margin: 0;
+    min-height: 100%;
+    padding: 0
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    text-align: center
+}
+
+.header p {
+    font-family: Fredoka One, cursive;
+    font-size: 4rem
+}
+
+#about>* {
+    flex: 1 1 100%
+}
+
+article {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem
+}
+
+.article p {
+    color: #000;
+    font-size: 1.65rem;
+    margin: 0 2rem;
+    text-align: justify
+}
+
+.link-styles {
+    color: hsla(0, 31%, 93%, .651);
+    text-decoration: none
+}
+
+.link-styles:hover {
+    color: #730ed1;
+    text-decoration: underline
+}
+
+footer {
+    background-color: hsla(0, 0%, 5%, 0);
+    width: 100%
+}
+
+.link-footer {
+    font-size: 3rem
+}
+
+@media (max-width:447px) {
+    .article p {
+        color: #000;
+        font-size: 1.4rem;
+        margin: 0 .5rem;
+        text-align: justify
+    }
+}
+
+/*# sourceMappingURL=main.2fda971a.css.map*/

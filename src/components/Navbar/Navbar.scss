@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 3rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  background-image: -webkit-linear-gradient(rgb(255, 255, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-brand:hover {
+  background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a .nav-link {
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  background: linear-gradient(
+    to right,
+    #ccc 50%,
+    rgb(0, 255, 0) 50%,
+    rgb(255, 0, 0)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.nav-link:hover {
+  background-position: -100%;
+}
+.icons-color {
+  color: #0077ff;
+}
