@@ -15,6 +15,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.navbar-toggler-icon {
+  color: #fff;
+}
 .navbar-brand:hover {
   background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));
   -webkit-background-clip: text;
@@ -39,7 +42,4 @@ a .nav-link {
 
 .nav-link:hover {
   background-position: -100%;
-}
-.icons-color {
-  color: #0077ff;
 }

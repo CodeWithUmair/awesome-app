@@ -12,6 +12,7 @@ body {
   text-align: center;
 }
 .header p {
+  margin-top: 1rem;
   font-size: 4rem;
   font-family: "Fredoka One", cursive;
 }
@@ -24,6 +25,7 @@ article {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  margin: 5rem 4rem;
   a {
     overflow: hidden;
     position: relative;
@@ -90,10 +92,11 @@ article {
 }
 footer {
   width: 100%;
-  background-color: rgba(14, 14, 14, 0);
+  margin-bottom: 2rem;
 }
 .link-footer {
   font-size: 3rem;
+  background-color: rgba(14, 14, 14, 0);
 }
 
 @media (max-width: 447px) {

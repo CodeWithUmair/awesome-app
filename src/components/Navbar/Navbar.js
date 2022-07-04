@@ -12,8 +12,8 @@ const Navbar = () => {
       <div className="navbar-style">
         <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed">
           <NavLink className="navbar-brand" to="/">
-            Hi Buddy👍{" "}
-          </NavLink>{" "}
+            Hi Buddy👍
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,7 +23,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"> </span>{" "}
+            <span className="navbar-toggler-icon"> </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
@@ -36,10 +36,10 @@ const Navbar = () => {
                     to="/"
                   >
                     <FontAwesomeIcon icon={faHome} color="#0077ff" />
-                    Home{" "}
-                  </NavLink>{" "}
-                </a>{" "}
-              </li>{" "}
+                    Home
+                  </NavLink>
+                </a>
+              </li>
               <li className="nav-item active">
                 <a>
                   <NavLink
@@ -49,9 +49,9 @@ const Navbar = () => {
                     to="/todo"
                   >
                     <FaClipboardList color="#0077ff" />
-                    Todo{" "}
-                  </NavLink>{" "}
-                </a>{" "}
+                    Todo
+                  </NavLink>
+                </a>
               </li>
               <li className="nav-item active">
                 <a>
@@ -62,10 +62,10 @@ const Navbar = () => {
                     to="/drum"
                   >
                     <FaDrum color="#0077ff" />
-                    Drum{" "}
-                  </NavLink>{" "}
-                </a>{" "}
-              </li>{" "}
+                    Drum
+                  </NavLink>
+                </a>
+              </li>
               <li className="nav-item active">
                 <a>
                   <NavLink
@@ -75,10 +75,10 @@ const Navbar = () => {
                     to="/calculator"
                   >
                     <FaCalculator color="#0077ff" />
-                    Calculator{" "}
-                  </NavLink>{" "}
-                </a>{" "}
-              </li>{" "}
+                    Calculator
+                  </NavLink>
+                </a>
+              </li>
               <li className="nav-item active">
                 <a>
                   <NavLink
@@ -88,14 +88,14 @@ const Navbar = () => {
                     to="/about"
                   >
                     <FaUser color="#0077ff" />
-                    About{" "}
-                  </NavLink>{" "}
-                </a>{" "}
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-        </nav>{" "}
-      </div>{" "}
+                    About
+                  </NavLink>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };
