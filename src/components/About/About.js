@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react";
 import "./About.scss";
 import { FaFreeCodeCamp, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -144,7 +145,6 @@ const About = () => {
           <p>
             To Connect with me, this is my email &#8594; &nbsp;
             <a
-              href="https://twitter.com/home"
               target="_blank"
               rel="noreferrer"
               className="link-styles"
