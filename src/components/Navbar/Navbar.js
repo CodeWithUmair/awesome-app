@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
-              <li className="nav-item active">
+              <li className="nav-item active text-center text-center">
                 <a>
                   <NavLink
                     exact="true"
@@ -40,7 +40,7 @@ const Navbar = () => {
                   </NavLink>
                 </a>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active text-center">
                 <a>
                   <NavLink
                     exact="true"
@@ -53,7 +53,7 @@ const Navbar = () => {
                   </NavLink>
                 </a>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active text-center">
                 <a>
                   <NavLink
                     exact="true"
@@ -66,7 +66,7 @@ const Navbar = () => {
                   </NavLink>
                 </a>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active text-center">
                 <a>
                   <NavLink
                     exact="true"
@@ -79,7 +79,7 @@ const Navbar = () => {
                   </NavLink>
                 </a>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active text-center">
                 <a>
                   <NavLink
                     exact="true"

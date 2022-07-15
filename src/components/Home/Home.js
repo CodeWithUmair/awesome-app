@@ -3,7 +3,7 @@ import "./Home.scss";
 
 const Home = () => {
   useEffect(() => {
-    document.title = `Hi Buddy 👍`;
+    document.title = `Hi Buddy 🏠`;
   });
 
   return (
